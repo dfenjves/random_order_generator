@@ -22,3 +22,16 @@ I, [2014-02-17T14:01:55.979518 #1305]  INFO -- : 0:  rspec-expectations (2.14.5)
 I, [2014-02-17T14:01:55.979723 #1305]  INFO -- : 0:  rspec-mocks (2.14.5) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/rspec-mocks-2.14.5.gemspec
 I, [2014-02-17T14:01:55.979942 #1305]  INFO -- : 0:  rspec (2.14.1) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/rspec-2.14.1.gemspec
 I, [2014-02-17T14:01:55.980139 #1305]  INFO -- : 0:  bundler (1.5.1) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.1.gemspec
+I, [2014-02-17T14:13:21.341078 #1347]  INFO -- : 0:  coderay (1.1.0) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/coderay-1.1.0.gemspec
+I, [2014-02-17T14:13:21.341324 #1347]  INFO -- : 0:  diff-lcs (1.2.5) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/diff-lcs-1.2.5.gemspec
+I, [2014-02-17T14:13:21.341511 #1347]  INFO -- : 0:  json (1.8.1) from /Users/danielfenjves/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/specifications/default/json-1.8.1.gemspec
+I, [2014-02-17T14:13:21.341723 #1347]  INFO -- : 0:  method_source (0.8.2) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/method_source-0.8.2.gemspec
+I, [2014-02-17T14:13:21.341964 #1347]  INFO -- : 0:  mime-types (2.1) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/mime-types-2.1.gemspec
+I, [2014-02-17T14:13:21.342182 #1347]  INFO -- : 0:  slop (3.4.7) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/slop-3.4.7.gemspec
+I, [2014-02-17T14:13:21.342384 #1347]  INFO -- : 0:  pry (0.9.12.6) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/pry-0.9.12.6.gemspec
+I, [2014-02-17T14:13:21.342625 #1347]  INFO -- : 0:  rest-client (1.6.7) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/rest-client-1.6.7.gemspec
+I, [2014-02-17T14:13:21.342817 #1347]  INFO -- : 0:  rspec-core (2.14.7) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/rspec-core-2.14.7.gemspec
+I, [2014-02-17T14:13:21.343029 #1347]  INFO -- : 0:  rspec-expectations (2.14.5) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/rspec-expectations-2.14.5.gemspec
+I, [2014-02-17T14:13:21.343229 #1347]  INFO -- : 0:  rspec-mocks (2.14.5) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/rspec-mocks-2.14.5.gemspec
+I, [2014-02-17T14:13:21.343425 #1347]  INFO -- : 0:  rspec (2.14.1) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/rspec-2.14.1.gemspec
+I, [2014-02-17T14:13:21.343618 #1347]  INFO -- : 0:  bundler (1.5.1) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.1.gemspec

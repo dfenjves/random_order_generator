@@ -4,6 +4,10 @@ puts "What is your address?"
 
 address = gets.chomp
 
-test = NearbyRestaurants.new("#{address}")
+restaurants = NearbyRestaurants.new("#{address}")
 
-puts test.random_merchant
+restaurant_id = restaurants.random_merchant
+
+menu = Menu.new(restaurant_id)
+
+puts menu.wholemenu

@@ -9,3 +9,4 @@ describe NearbyRestaurants do
 	end
 
 end
+

@@ -1,7 +1,9 @@
 require_relative '../config/environment'
 
-test = NearbyRestaurants.new("11 Broadway 10004")
+puts "What is your address?"
 
-binding.pry
+address = gets.chomp
 
-puts test.names
+test = NearbyRestaurants.new("#{address}")
+
+puts test.random_merchant

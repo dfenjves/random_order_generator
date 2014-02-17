@@ -1,16 +1,13 @@
 #returns nearby restaurants given address
 
 class NearbyRestaurants
-	attr_accessor :address, :restaurant_data, :restaurants, :names
+	attr_accessor :address, :restaurant_data, :restaurants, :names, :ids
 
 	def initialize(address)
 		@address = address.gsub(" ", "%20")
 		self.restaurant_data = RestClient.get("https://api.delivery.com/merchant/search/delivery?client_id=OWQ0NGNiNGVlY2JmZWVlYWMxYzQwMWJlNjUxYTY2ZTc3&address=#{@address}&merchant_type=R")
-	end
-
-
-	def restaurants
 		self.restaurants = JSON.parse(restaurant_data)
+		ids
 	end
 
 	def ids
@@ -25,8 +22,8 @@ class NearbyRestaurants
 		@ids
 	end
 
-	def names
-		self.restaurants
+	def random_merchant
+		@ids[rand(0..(ids.count-1))]
 	end
 
 end

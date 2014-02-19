@@ -24,11 +24,18 @@ class NearbyRestaurants
 		@merchants[rand(0..(merchants.count-1))]["id"]
 	end
 
-	def lookup_merchant(id)
+	def lookup_merchant_name(id)
 		specific_merchant = @merchants.select do |merchant|
 			merchant if merchant["id"] == id
 		end
 		specific_merchant.first["summary"]["name"]
+	end
+
+	def lookup_merchant_url(id)
+		specific_merchant = @merchants.select do |merchant|
+			merchant if merchant["id"] == id
+		end
+		specific_merchant.first["summary"]["url"]["complete"]
 	end
 
 end

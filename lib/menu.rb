@@ -1,9 +1,10 @@
 class Menu
-	attr_accessor :data, :wholemenu, :items
+	attr_accessor :data, :wholemenu, :items, :max_price
 
-	def initialize(restaurant_id)
+	def initialize(restaurant_id, max_price)
 		self.data = JSON.parse(RestClient.get("https://api.delivery.com/merchant/#{restaurant_id}/menu?client_id=OWQ0NGNiNGVlY2JmZWVlYWMxYzQwMWJlNjUxYTY2ZTc3&item_only=1"))
 		self.wholemenu = data["menu"]
+		self.max_price = max_price
 		@items = []
 		get_menu_items
 	end
@@ -32,38 +33,16 @@ class Menu
 		@items
 	end
 
-	# 	def get_menu_items
-	# 	@items =[]
-	# 	wholemenu.each do |item|
-	# 		while item["children"].count != 0
-	# 			each child
-	# 				item = child
-	# 			end
-	# 		end
-
-	# 	end
-	# 	@items
-	# end
-
-	# def iterate_through
-	# 	@items << item if item["children"].count == 0
-	# 	if item["children"].count > 0
-	# 		item["children"].each do |item|
-	# 			self
-	# 		end
-	# 	end
-	# end
-
-	# def get_menu_items
-	# 	wholemenu.each do |item|
-	# 		iterate_through
-	# 	end
-	# end
-
 
 	def choose_an_item
-		choice = @items[rand(0..(@items.count-1))]
-		item_formatter(choice)
+		random_num = rand(0..(@items.count-1))
+		choice = @items[random_num]
+		if choice["price"] > max_price
+			choose_an_item
+		else
+			item_formatter(choice)
+		end
+		
 	end
 
 	def item_formatter(food)

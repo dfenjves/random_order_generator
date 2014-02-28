@@ -59,6 +59,14 @@ h2 {
 	text-shadow: 4px 4px #000000;
 }
 
+h3 {
+	font-family: 'Press Start 2P';
+	font-size: 18px;
+	color: #689CD2;
+	text-shadow: 4px 4px #000000;
+	text-align: center;
+}
+
 .wrapper {
 	width: 960px;
 	margin: 0 auto;
@@ -75,6 +83,9 @@ h2 {
 
 .random_order{
 	text-align: center;
+	font: menu;
+	color: whitesmoke;
+	font-size: 15px;
 }
 
 .topspace{

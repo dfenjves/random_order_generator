@@ -1,16 +1,42 @@
-<h1>Welcome to R.O.G.</h1>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Random Order Generator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="<%=url('/stylesheets/normalize.css')%>">
+		<link rel="stylesheet" href="<%=url('/stylesheets/style.css')%>">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-<h2>Random Order Generator</h2>
+        <!-- Add your site or application content here -->
+                <header>
+                    <h1>ROG</h1>
+				    <h2>Random Order Generator</h2>
+                </header>
+                
+				<form action='/' method="post">
 
-<form action='/' method="post">
 
+				Address: <input type="text" name="address"><br>
 
-Address: <input type="text" name="address"><br>
+				Number of Items: <input type="text" name="items"><br>
 
-Number of Items: <input type="text" name="items"><br>
+				Max Item Price: <input type="text" name="maxprice"><br>
 
-Max Item Price: <input type="text" name="maxprice"><br>
+				<input type="submit">
 
-<input type="submit">
+				<form>
 
-<form>
+    </body>
+</html>
+

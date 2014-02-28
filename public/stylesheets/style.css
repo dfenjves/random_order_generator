@@ -23,11 +23,23 @@
 /* ----- Global Styling ----- */
 
 body {
-	background-color: #3E97D1
+
+}
+
+#page-bg {
+	background-color: #04376C;
+	height:100%;
+}
+
+a {
+	text-decoration:none;
+	color: #FF8E00
+
 }
 
 header {
 	text-align: center;
+	padding: 0;
 }
 
 h1 {
@@ -40,7 +52,9 @@ h1 {
 .wrapper {
 	width: 960px;
 	margin: 0 auto;
-
+	background-color: #0D58A6;
+	border-radius:20px;
+	padding: 40px;
 }
 
 .small_centered{
@@ -50,6 +64,10 @@ h1 {
 
 .random_order{
 	text-align: center;
+}
+
+.topspace{
+	height: 10px
 }
 
 ul {
@@ -89,4 +107,12 @@ input[type="submit"]:hover {
 
 .button-warning {
   background: #FF8E00; /* this is an orange */
+}
+
+/* ----- Bottom Bar Styling ----- */
+
+#bottom-bar {
+	background-color: #26517C;
+	height: 50px;
+	width: 100%;
 }

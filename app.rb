@@ -12,9 +12,14 @@ post '/' do
 	quantity = params[:items].to_i
 	max = params[:maxprice].to_i
 
-	@order = RandomOrderGenerator.new(address,quantity,max)
-
-	erb :result
+	begin
+		@order = RandomOrderGenerator.new(address,quantity,max)
+	rescue
+		erb :badaddress
+	else
+		erb :result
+	end
+	
 end
 
 

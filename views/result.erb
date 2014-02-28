@@ -1,21 +1,43 @@
-<h1>Welcome to R.O.G.</h1>
 
-<h2>Random Order Generator</h2>
 
-<h2>Your Random Order</h2>
+ <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Random Order Generator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="<%=url('/stylesheets/normalize.css')%>">
+         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+		<link rel="stylesheet" href="<%=url('/stylesheets/style.css')%>">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-<h3>Restaurant: <%= @order.restaurant_name %> </h3>
+        <!-- Add your site or application content here -->
+                <header>
+                    <h1>ROG</h1>
+				    <h2>Random Order Generator</h2>
+                </header>
 
-<h3><a href="<%= @order.restaurant_url %>"><%= @order.restaurant_url %></a></h3>
-
-<h3>Items</h3>
-
-<ul>
-	<% @order.quantity.times do %>
-	<li> <%= @order.random_menu_item %> </li>
-		<%end%>
-</ul>
-
-<form action= "/" method= "post">
-
-</form>
+                <div class="wrapper">
+                	<div class="random_order">
+										<h3>Restaurant: <%= @order.restaurant_name %> </h3>
+										<h3>Items</h3>
+										<ul>
+											<% @order.quantity.times do %>
+											<li> <%= @order.random_menu_item %> </li>
+											<%end%>
+										</ul>
+										<h3><a href="<%= @order.restaurant_url %>">Click to Order</a></h3>
+									</div>
+                </div>
+    </body>
+</html>

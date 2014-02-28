@@ -1,4 +1,4 @@
-require_relative '../config/environment'
+require_relative '../../config/environment'
 
 class RandomOrderGenerator
 	attr_accessor :address, :quantity, :max_price, :restaurants, :restaurant_id, :restaurant_name, :restaurant_url, :menu, :random_menu_item

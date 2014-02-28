@@ -10,7 +10,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="<%=url('/stylesheets/normalize.css')%>">
-		<link rel="stylesheet" href="<%=url('/stylesheets/style.css')%>">
+         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+        <link rel="stylesheet" href="<%=url('/stylesheets/style.css')%>">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     </head>
     <body>
@@ -21,21 +22,19 @@
         <!-- Add your site or application content here -->
                 <header>
                     <h1>ROG</h1>
-				    <h2>Random Order Generator</h2>
+                    <h2>Random Order Generator</h2>
                 </header>
-                
-				<form action='/' method="post">
 
-
-				Address: <input type="text" name="address"><br>
-
-				Number of Items: <input type="text" name="items"><br>
-
-				Max Item Price: <input type="text" name="maxprice"><br>
-
-				<input type="submit">
-
-				<form>
+                <div class="wrapper">
+                    <form class="pure-form pure-form-stacked small_centered" action='/' method="post">
+                        <fieldset>
+                            <input type="text" placeholder= "Address" name="address"><br>
+                            <input type="text" placeholder= "Number of items" name="items"><br>
+                            <input type="text" placeholder="Maximum Item Price" name="maxprice"><br>
+                            <button type="submit" class="button-warning pure-button">Submit</button>
+                        </fieldset>
+                    </form>
+                 </div>
 
     </body>
 </html>

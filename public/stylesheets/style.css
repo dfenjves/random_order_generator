@@ -62,7 +62,7 @@ h2 {
 h3 {
 	font-family: 'Press Start 2P';
 	font-size: 18px;
-	color: #689CD2;
+	color: white;
 	text-shadow: 4px 4px #000000;
 	text-align: center;
 }
@@ -94,6 +94,15 @@ h3 {
 
 ul {
 	list-style-type: none;
+}
+
+li {
+	font-family: 'Press Start 2P';
+	font-size: 14px;
+	color: white;
+	text-shadow: 2px 2px #000000;
+	text-align: center;
+	line-height: 2em;
 }
 
 /* ----- Form Styling ----- */
